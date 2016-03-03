@@ -25,9 +25,16 @@ class Lmc_Search_Shortcode {
 	static function enqueue_script() {
 		global $post;
 		if ( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'lmcsearchbox' ) ) {
-			wp_enqueue_script( 'lmc_search_script', plugins_url().'/lmc-search-plugin/lmc.js', true );
+                        wp_register_script( 
+                            'lmc_search_script', 
+                            plugins_url().'/lmc-search-plugin/lmc.js', 
+                            array( 'jquery' )
+                        );
+			wp_enqueue_script( 'lmc_search_script');                        
 		}
 	}
 }
 $lmc_search = new Lmc_Search_Shortcode;
 $lmc_search->__construct();
+
+?>

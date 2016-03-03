@@ -1,8 +1,10 @@
+
+
 <form id="simple" name="searchForm" method="get" target="_self" action="http://wactc-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
 	<!-- Customizable Parameters -->
 	<input type="hidden" name="institution" value="WACTC_BELLEVUE ">
 	<input type="hidden" name="vid" value="BELLEVUE">
-	<input type="hidden" name="tab" value="default_tab">
+	<input type="hidden" name="tab" value="default_tab" id="hidden_tab">
 	<input type="hidden" name="search_scope" value="default_scope">
 	<input type="hidden" name="mode" value="Basic">
 	<!-- Fixed parameters -->
@@ -16,10 +18,20 @@
 	<input type="hidden" name="pcAvailabiltyMode" value="true">
 
 	<!-- Search Button -->
-	<aside class="panel panel-primary">
-		<div class="panel-heading">
-			<h2 class="panel-title"><label for="primoQueryTemp">Search the Bellevue College Library</label></h2>
-		</div>
+<!--	<aside class="panel panel-primary">
+		<div class="panel-heading">-->
+<!--			<h2 class="panel-title"><label for="primoQueryTemp">Search the Bellevue College Library</label></h2>-->
+                      
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active" ><a href="#search" aria-controls="search" role="tab" data-toggle="tab">Search All</a></li>
+    <li role="presentation"><a href="#books" aria-controls="books" role="tab" data-toggle="tab">Books and Media</a></li>
+    <li role="presentation"><a href="#articles" aria-controls="articles" role="tab" data-toggle="tab" >Articles</a></li>
+    <li role="presentation"><a href="#course" aria-controls="course" role="tab" data-toggle="tab" >Course Reserves</a></li>
+  </ul>
+ 
+<!--		</div>-->
 		<div class="panel-body">
 			<div class="input-group">
 				<input type="text" id="primoQueryTemp" value="" class="form-control">
@@ -28,5 +40,5 @@
 				</span>
 			</div>
 		</div>
-	</aside>
+<!--	</aside>-->
 </form>
