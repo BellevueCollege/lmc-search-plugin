@@ -46,7 +46,3 @@ document.forms["searchForm"].submit();
 </body>
 </html>
 ```
-
-## Plugin Status
-
-As of initial commit, this is in prototype/proof-of-concept stage. LMC is targeting release around Summer 2016.
