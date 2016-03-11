@@ -1,12 +1,13 @@
 <?php
 /*
-Plugin Name: Library Search Box Plugin
-Plugin URI:  TBD
-Description: Custom implimentation of library search functionality
-Version:     0.0.0.2
-Author:      Bellevue College ITS
-Author URI:  http://www.bellevuecollege.edu
-Text Domain: lmc-search-plugin
+Plugin Name:       Library Search Box Plugin
+Plugin URI:        TBD
+Description:       Custom implimentation of library search functionality
+Version:           0.0.0.3
+Author:            Bellevue College ITS
+Author URI:        http://www.bellevuecollege.edu
+Text Domain:       lmc-search-plugin
+GitHub Plugin URI: BellevueCollege/lmc-search-plugin
  */
 
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
