@@ -3,7 +3,7 @@
 Plugin Name:       Library Search Box Plugin
 Plugin URI:        TBD
 Description:       Custom implimentation of library search functionality
-Version:           0.0.0.4
+Version:           0.0.0.5
 Author:            Bellevue College ITS
 Author URI:        http://www.bellevuecollege.edu
 Text Domain:       lmc-search-plugin
