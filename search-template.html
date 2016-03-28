@@ -1,0 +1,46 @@
+<form id="simple" name="searchForm" method="get" target="_self" action="http://wactc-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
+	<!-- Customizable Parameters -->
+	<input type="hidden" name="institution" value="WACTC_BELLEVUE ">
+	<input type="hidden" name="vid" value="BELLEVUE">
+	<input type="hidden" name="tab" value="default_tab" id="hidden_tab">
+	<input type="hidden" name="search_scope" value="default_scope">
+	<input type="hidden" name="mode" value="Basic">
+	<!-- Fixed parameters -->
+	<input type="hidden" name="displayMode" value="full">
+	<input type="hidden" name="bulkSize" value="15">
+	<input type="hidden" name="highlight" value="true">
+	<input type="hidden" name="dum" value="true">
+	<input type="hidden" name="query" id="primoQuery">
+	<input type="hidden" name="displayField" value="all">
+	<!-- Enable this if "Expand My Results" is enabled by default in Views Wizard -->
+	<input type="hidden" name="pcAvailabiltyMode" value="true">
+
+	<!-- Search Button -->
+	<div class="panel panel-primary" role="search" aria-labelledby="lmc-search-title">
+		<div class="panel-heading">
+			<h2 class="panel-title" id="lmc-search-title"><label for="primoQueryTemp">Search for Bellevue College Library Resources</label></h2>
+		</div>
+		<div class="panel-body">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active" ><a href="#search" aria-controls="search" role="tab" data-toggle="tab">Search All</a></li>
+				<li role="presentation"><a href="#books" aria-controls="books" role="tab" data-toggle="tab">Books and Media</a></li>
+				<li role="presentation"><a href="#articles" aria-controls="articles" role="tab" data-toggle="tab" >Articles</a></li>
+				<li role="presentation"><a href="#course" aria-controls="course" role="tab" data-toggle="tab" >Course Reserves</a></li>
+			</ul>
+			<div class="input-group">
+				<input type="text" id="primoQueryTemp" value="" class="form-control" maxlength="400">
+				<div class="input-group-btn">
+					<input id="go" onclick="searchPrimo()" type="button" value="Search" class="btn btn-primary" type="button">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> <span class="sr-only">Other Search Options</span>
+					</button>
+					<div class="dropdown-menu dropdown-menu-right">
+						<input id="goAdv" onclick="searchPrimoAdv()" type="button" value="Advanced Search" class="btn btn-sm btn-link" type="button"><br />
+						<a class="btn btn-sm btn-link" href="http://wactc-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?institution=WACTC_BELLEVUE+&vid=BELLEVUE&mode=BrowseSearch&">Browse Search</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
