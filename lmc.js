@@ -9,13 +9,13 @@ jQuery(document).ready(function($) {
 				hidden_tab_el.val('default_tab');
 				break;
 			case '#books':
-				hidden_tab_el.val('books');
+				hidden_tab_el.val('bellevue_alma');
 				break;
 			case '#articles':
-				hidden_tab_el.val('articles');
+				hidden_tab_el.val('pci');
 				break;
 			case '#course':
-				hidden_tab_el.val('cr');
+				hidden_tab_el.val('bellevue_course_reserves');
 				break;
 		}
 	});
