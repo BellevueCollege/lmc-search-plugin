@@ -26,7 +26,7 @@ function searchPrimo() {
 	document.forms["searchForm"].submit();
 }
 function searchPrimoAdv() {
-	jQuery('input[name=mode]').val("Advanced");
+	jQuery('input[name=mode]').val("advanced");
 	document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " ");
 	document.forms["searchForm"].submit();
 }
