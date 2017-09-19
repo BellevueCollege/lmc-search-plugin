@@ -3,7 +3,7 @@
 Plugin Name:       Library Search Box Plugin
 Plugin URI:        https://github.com/BellevueCollege/lmc-search-plugin
 Description:       Custom implimentation of library search functionality
-Version:           1.1.3
+Version:           1.2
 Author:            Bellevue College ITS
 Author URI:        https://www.bellevuecollege.edu
 Text Domain:       lmc-search-plugin
@@ -29,7 +29,8 @@ class Lmc_Search_Shortcode {
 			wp_register_script(
 				'lmc_search_script',
 				plugins_url().'/lmc-search-plugin/lmc.js',
-				array( 'jquery' )
+				array( 'jquery' ),
+				'1.2'
 			);
 			wp_enqueue_script( 'lmc_search_script');
 		}
