@@ -3,19 +3,27 @@ jQuery(document).ready(function($) {
 		var href_value = e.target.toString();
 		var split_href_array = href_value.split('/');
 		var last_element = split_href_array[split_href_array.length -1];
- 		var hidden_tab_el = $('#hidden_tab');
+
+		var tab_peram          = $('#primo_peram_tab');
+		var peram_search_scope = $('#primo_peram_search_scope');
+		var peram_mode         = $('#primo_peram_mode');
+
 		switch(last_element) {
 			case '#search':
-				hidden_tab_el.val('default_tab');
+				tab_peram.val('default_tab');
+				peram_search_scope.val('EVERYTHING');
 				break;
 			case '#books':
-				hidden_tab_el.val('bellevue_alma');
+				tab_peram.val('bellevue_alma');
+				peram_search_scope.val('BELLEVUE_ALMA');
 				break;
 			case '#articles':
-				hidden_tab_el.val('pci');
+				tab_peram.val('pci');
+				peram_search_scope.val('PCI');
 				break;
 			case '#course':
-				hidden_tab_el.val('bellevue_course_reserves');
+				tab_peram.val('bellevue_course_reserves');
+				peram_search_scope.val('BELLEVUE_COURSE_RESERVES');
 				break;
 		}
 	});

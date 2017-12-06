@@ -1,18 +1,11 @@
 <form id="simple" name="searchForm" method="get" target="_self" action="https://bellevue-primo.hosted.exlibrisgroup.com/primo-explore/search?" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
 	<!-- Customizable Parameters -->
 	<input type="hidden" name="vid" value="BELLEVUE">
-	<input type="hidden" name="tab" value="default_tab" id="hidden_tab">
-	<input type="hidden" name="search_scope" value="EVERYTHING">
-	<input type="hidden" name="mode" value="Basic">
+	<input type="hidden" name="tab" value="default_tab" id="primo_peram_tab">
+	<input type="hidden" name="search_scope" value="EVERYTHING" id="primo_peram_search_scope">
+	<input type="hidden" name="mode" value="Basic" id="primo_peram_mode">
 	<!-- Fixed parameters -->
-	<input type="hidden" name="displayMode" value="full">
-	<input type="hidden" name="bulkSize" value="15">
-	<input type="hidden" name="highlight" value="true">
-	<input type="hidden" name="dum" value="true">
 	<input type="hidden" name="query" id="primoQuery">
-	<input type="hidden" name="displayField" value="all">
-	<!-- Enable this if "Expand My Results" is enabled by default in Views Wizard -->
-	<input type="hidden" name="pcAvailabiltyMode" value="false">
 
 	<!-- Search Button -->
 	<div class="panel panel-primary" role="search" aria-labelledby="lmc-search-title">
