@@ -1,9 +1,13 @@
-<form id="simple" name="searchForm" method="get" target="_self" action="https://bellevue-primo.hosted.exlibrisgroup.com/primo-explore/search?" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
+<form id="simple" name="searchForm" method="get" target="_self" action="https://sbctc-bellevuecollege.primo.exlibrisgroup.com/discovery/search?" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
+	<!-- // New URL https://sbctc-bellevuecollege.primo.exlibrisgroup.com/discovery/search?vid=01STATEWA_BELCC:BELLEVUE&sortby=rank -->
 	<!-- Customizable Parameters -->
-	<input type="hidden" name="vid" value="BELLEVUE">
-	<input type="hidden" name="tab" value="default_tab" id="primo_peram_tab">
-	<input type="hidden" name="search_scope" value="EVERYTHING" id="primo_peram_search_scope">
-	<input type="hidden" name="mode" value="Basic" id="primo_peram_mode">
+	<input type="hidden" name="vid" value="01STATEWA_BELCC:BELLEVUE">
+	<input type="hidden" name="institution" value="01STATEWA_BELCC"> 
+	<input type="hidden" name="search_scope" value="MyInst_and_CI" id="primo_peram_search_scope">
+
+	<input type="hidden" name="tab" value="Everything" id="primo_peram_tab">
+	<input type="hidden" name="mode" value="basic" id="primo_peram_mode">
+	
 	<!-- Fixed parameters -->
 	<input type="hidden" name="query" id="primoQuery">
 
@@ -29,7 +33,7 @@
 					</button>
 					<div class="dropdown-menu dropdown-menu-right">
 						<input id="goAdv" onclick="searchPrimoAdv()" type="button" value="Advanced Search" class="btn btn-sm btn-link" type="button"><br />
-						<a class="btn btn-sm btn-link" href="https://bellevue-primo.hosted.exlibrisgroup.com/primo-explore/browse?vid=BELLEVUE">Browse Search</a>
+						<a class="btn btn-sm btn-link" href="https://sbctc-bellevuecollege.primo.exlibrisgroup.com/discovery/browse?vid=01STATEWA_BELCC:BELLEVUE">Browse Search</a>
 					</div>
 				</div>
 			</div>
