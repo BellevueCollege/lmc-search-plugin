@@ -10,20 +10,20 @@ jQuery(document).ready(function($) {
 
 		switch(last_element) {
 			case '#search':
-				tab_peram.val('default_tab');
-				peram_search_scope.val('EVERYTHING');
+				tab_peram.val('Everything');
+				peram_search_scope.val('MyInst_and_CI');
 				break;
 			case '#books':
-				tab_peram.val('bellevue_alma');
-				peram_search_scope.val('BELLEVUE_ALMA');
+				tab_peram.val('LibraryCatalog');
+				peram_search_scope.val('MyInstitution');
 				break;
 			case '#articles':
-				tab_peram.val('pci');
-				peram_search_scope.val('PCI');
+				tab_peram.val('CentralIndex');
+				peram_search_scope.val('CentralIndex');
 				break;
 			case '#course':
-				tab_peram.val('bellevue_course_reserves');
-				peram_search_scope.val('BELLEVUE_COURSE_RESERVES');
+				tab_peram.val('CourseReserves');
+				peram_search_scope.val('CourseReserves');
 				break;
 		}
 	});
