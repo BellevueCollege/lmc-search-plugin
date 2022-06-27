@@ -2,8 +2,8 @@
 /*
 Plugin Name:       Library Search Box Plugin
 Plugin URI:        https://github.com/BellevueCollege/lmc-search-plugin
-Description:       Custom implimentation of library search functionality
-Version:           1.2.4 #{versionStamp}#
+Description:       Custom implementation of library search functionality
+Version:           2 #{versionStamp}#
 Author:            Bellevue College ITS
 Author URI:        https://www.bellevuecollege.edu
 Text Domain:       lmc-search-plugin
