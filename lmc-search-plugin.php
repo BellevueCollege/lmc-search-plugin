@@ -25,16 +25,22 @@ class Lmc_Search_Shortcode {
 	}
 	static function enqueue_script() {
 		global $post;
+		wp_register_script(
+			'lmc_search_script',
+			plugins_url().'/lmc-search-plugin/lmc.js',
+			array( ),
+			'2'
+		);
 		if ( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'lmcsearchbox' ) ) {
-			wp_register_script(
-				'lmc_search_script',
-				plugins_url().'/lmc-search-plugin/lmc.js',
-				array( 'jquery' ),
-				'1.2.2'
-			);
 			wp_enqueue_script( 'lmc_search_script');
 		}
 	}
 }
 $lmc_search = new Lmc_Search_Shortcode;
 $lmc_search->__construct();
+
+// Register Block that Renders the Shortcode
+function lmc_search_plugin_register_block() {
+    register_block_type( __DIR__ . '/build' );
+}
+add_action( 'init', 'lmc_search_plugin_register_block' );
