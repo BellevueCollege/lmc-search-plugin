@@ -9,7 +9,8 @@
     "version": "1.0.0",
     "textdomain": "lmc-search-plugin",
     "supports": {
-        "html": false
+        "html": false,
+        "multiple": false
     },
     "attributes": {
     },
