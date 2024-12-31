@@ -1,6 +1,6 @@
 # LMC Search Box Plugin
 
-Allows insertion of a library catalog search box into any WordPress page through the shortcode `[lmcsearchbox]`.
+Allows insertion of a library catalog search box into any WordPress page through the shortcode `[lmcsearchbox]` or via the `LMC Catalog Search Box` block.
 
 ## Code Functionality
 
@@ -14,4 +14,11 @@ For, Search All       - default_tab
      Course Reserves  - Cr
 
 
+## Build Processes
+The block portion of this plugin requires a build process. This is managed using wp-scripts.
 
+The following NPM commands are available:
+```bash
+npm start      # watch files and recompile on change
+npm run build  # do a one-time build with production settings
+``
