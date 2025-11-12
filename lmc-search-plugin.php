@@ -16,5 +16,6 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 // Register Block that Renders the Shortcode
 function lmc_search_plugin_register_block() {
     register_block_type( __DIR__ . '/build/lmc-search-block' );
+	register_block_type( __DIR__ . '/build/lmc-browzine-search-block' );
 }
 add_action( 'init', 'lmc_search_plugin_register_block' );
