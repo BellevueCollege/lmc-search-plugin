@@ -13,6 +13,14 @@
         "multiple": false
     },
     "attributes": {
+        "headerText": {
+            "type": "string",
+            "default": "Search Bellevue College Library"
+        },
+        "helpText": {
+            "type": "string",
+            "default": "Search for articles, books, and more"
+        }
     },
     "editorScript": "file:./index.js",
     "viewScript": [ "file:./view.js" ],
