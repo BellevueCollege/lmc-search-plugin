@@ -15,7 +15,7 @@
     "attributes": {
     },
     "editorScript": "file:./index.js",
-    "viewScript": [ "lmc_search_script" ],
+    "viewScript": [ "file:./view.js" ],
     "style": [ "file:./style-index.css"],
     "editorStyle": "file:./index.css",
     "render": "file:./render.php"
