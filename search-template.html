@@ -1,4 +1,4 @@
-<form id="simple" name="searchForm" method="get" target="_self" action="https://sbctc-bellevuecollege.primo.exlibrisgroup.com/discovery/search?" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
+<form id="lmc-search-form" name="searchForm" method="get" target="_self" action="https://sbctc-bellevuecollege.primo.exlibrisgroup.com/discovery/search?" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
 	<!-- // New URL https://sbctc-bellevuecollege.primo.exlibrisgroup.com/discovery/search?vid=01STATEWA_BELCC:BELLEVUE&sortby=rank -->
 	<!-- Customizable Parameters -->
 	<input type="hidden" name="vid" value="01STATEWA_BELCC:BELLEVUE">
@@ -11,31 +11,16 @@
 	<!-- Fixed parameters -->
 	<input type="hidden" name="query" id="primoQuery">
 
-	<!-- Search Button -->
-	<div id="lmc-search-block" class="card border-primary" role="search" aria-labelledby="lmc-search-title">
-		<h2 class="card-header bg-primary text-light h4" id="lmc-search-title"><label for="primoQueryTemp">Search for Bellevue College Library Resources</label></h2>
-		<div class="card-header">
-			<ul class="nav nav-tabs card-header-tabs" role="tablist">
-				<li class="nav-item" role="presentation"><a class="nav-link active" href="#search" aria-controls="search" role="tab" data-bs-toggle="tab">Search All</a></li>
-				<li class="nav-item" role="presentation"><a class="nav-link" href="#books" aria-controls="books" role="tab" data-bs-toggle="tab">Books and Media</a></li>
-				<li class="nav-item" role="presentation"><a class="nav-link" href="#articles" aria-controls="articles" role="tab" data-bs-toggle="tab" >Articles</a></li>
-				<li class="nav-item" role="presentation"><a class="nav-link" href="#course" aria-controls="course" role="tab" data-bs-toggle="tab" >Course Reserves</a></li>
-			</ul>
-		</div>
-		<div class="card-body">
-			<!-- Nav tabs -->
-			
+	<div class="card text-bg-primary rounded-2">
+		<h2 class="card-header h5">
+			<label for="primoQueryTemp">Search for Bellevue College Library Resources</label>
+		</h2>
+		<div class="card-body text-bg-light rounded-bottom-2">
 			<div class="input-group">
 				<input type="text" id="primoQueryTemp" value="" class="form-control" maxlength="400">
-				<input id="go" onclick="searchPrimo()" type="submit" value="Search" class="btn btn-primary" type="button">
-				<button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> <span class="sr-only">Other Search Options</span>
-				</button>
-				<div class="dropdown-menu dropdown-menu-end">
-					<input id="goAdv" onclick="searchPrimoAdv()" type="button" value="Advanced Search" class="dropdown-item" type="button">
-					<a class="dropdown-item" href="https://sbctc-bellevuecollege.primo.exlibrisgroup.com/discovery/browse?vid=01STATEWA_BELCC:BELLEVUE">Browse Search</a>
-				</div>
+				<input id="lmc-search-button" onclick="searchPrimo()" type="submit" value="Search" class="btn btn-primary" type="button">
 			</div>
 		</div>
 	</div>
 </form>
+
