@@ -33,6 +33,7 @@ registerBlockType("lmc-search-plugin/lmc-browzine-search-block", {
 				<Disabled>
 					<ServerSideRender
 						block="lmc-search-plugin/lmc-browzine-search-block"
+						attributes={props.attributes}
 					/>
 				</Disabled>
 			</div>
