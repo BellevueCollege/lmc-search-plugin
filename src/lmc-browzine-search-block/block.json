@@ -1,11 +1,11 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
     "apiVersion": 3,
-    "name": "lmc-search-plugin/lmc-search-block",
-    "title": "LMC Catalog Search Box",
+    "name": "lmc-search-plugin/lmc-browzine-search-block",
+    "title": "LMC Browzine Search Box",
     "category": "layout",
     "icon": "search",
-    "description": "Block to search the LMC catalog",
+    "description": "Block to search the LMC Browzine catalog",
     "version": "1.0.0",
     "textdomain": "lmc-search-plugin",
     "supports": {
@@ -13,9 +13,16 @@
         "multiple": false
     },
     "attributes": {
+        "headerText": {
+            "type": "string",
+            "default": "Search Browzine"
+        },
+        "helpText": {
+            "type": "string",
+            "default": "Search for journals and articles"
+        }
     },
     "editorScript": "file:./index.js",
-    "viewScript": [ "lmc_search_script" ],
     "style": [ "file:./style-index.css"],
     "editorStyle": "file:./index.css",
     "render": "file:./render.php"
