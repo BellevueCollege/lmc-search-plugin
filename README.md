@@ -1,17 +1,20 @@
 # LMC Search Box Plugin
 
-Allows insertion of a library catalog search box into any WordPress page through the shortcode `[lmcsearchbox]`.
+Allows insertion of a library catalog search box into any WordPress page viathe `LMC Catalog Search Box` block. In addition, it allows insertion of a Browzine search box into any WordPress page via the `LMC Browzine Search Box` block.
 
-## Code Functionality
+## Structure
+The plugin is structured as follows:
+- `src/` - Source code for the plugin
+    - `lmc-search-block/` - Catalog Search Block
+    - `lmc-browzine-search-block/` - Browzine Search Block
+- `build/` - Build output for the plugin
+- `lmc-search-plugin.php` - Main plugin file
 
-This plugin is based on the code, provided by the LMC's vendor. You can find the base code in search-template.html file.
-The code dynamically edit the value of the hidden element 'hidden_tab' before submitting the form.
+## Build Processes
+The block portion of this plugin requires a build process. This is managed using wp-scripts.
 
-The query variable tab should have the appropriate value.
-For, Search All       - default_tab
-     Books and Media  - books
-     Articles         - articles
-     Course Reserves  - Cr
-
-
-
+The following NPM commands are available:
+```bash
+npm start      # watch files and recompile on change
+npm run build  # do a one-time build with production settings
+``
